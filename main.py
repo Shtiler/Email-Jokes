@@ -16,6 +16,11 @@ def jokes(api):
 
 def generate_send_msg():
     joke = jokes(api)
+    # Api's limit is 100 requests per 15 min
+    if joke['type'] == "error":
+        print("Error")
+        return
+    
     msg = EmailMessage()
     msg['Subject'] = joke['setup']
     msg['From'] = email1
@@ -30,5 +35,6 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.login(email1, password1)
     for i in range(num_emails):
         generate_send_msg()
+    print("Done!")
 
 
