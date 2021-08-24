@@ -4,8 +4,10 @@ If you want someone's inbox to look like this: use this script.
 
 Instructions:
 1. change lines 7,8 to your email and password
-2. make sure you have enabled this: https://myaccount.google.com/lesssecureapps on your account
+2. make sure you have enabled this: https://myaccount.google.com/lesssecureapps on your account 
+
 Run the script then.
+
 3.  Enter the target's email
 4.  Enter the amount of jokes you want to send
 Done!
