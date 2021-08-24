@@ -10,5 +10,8 @@ Run the script then.
 
 3.  Enter the target's email
 4.  Enter the amount of jokes you want to send
+
+
+
 Done!
 
