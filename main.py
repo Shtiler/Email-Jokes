@@ -27,6 +27,7 @@ def generate_send_joke():
     msg['To'] = target
     msg.set_content(joke['punchline'])
     smtp.send_message(msg)
+    
 def generate_send_spam(subj,body):
     msg = EmailMessage()
     rand = f"#{random.randrange(1,1000)}"
@@ -46,6 +47,7 @@ if choice == 1:
         for i in range(num_emails):
             generate_send_joke()
         print("Done!")
+        
 elif choice == 2:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         smtp.login(email1, password1)
