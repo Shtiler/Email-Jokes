@@ -39,6 +39,7 @@ def generate_send_spam(subj,body):
 choice = int(input("Enter 1 for Sending a jokes: \nEnter 2 For Email Spam: "))
 target = input("Enter Target's Email: ")
 num_emails = int(input("Enter The Amount of Jokes To Send: "))
+
 if choice == 1:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         smtp.login(email1, password1)
@@ -54,6 +55,6 @@ elif choice == 2:
             generate_send_spam(subj,body)
         print("Done!")
 else:
-    print("Choice Invalid")
+    print("Invalid Choice")
 
 
